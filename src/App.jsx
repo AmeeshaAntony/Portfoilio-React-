@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar';
 import './App.css'
 import Maincontent from './components/Maincontent';
 import SkillsCarousel from './components/skillsCarousel';
+import Contact from './components/Contact';
 function App() {
   const [savechange,setSavechange] = useState('home');
 
@@ -11,6 +12,7 @@ function App() {
         <Sidebar setSavechange={setSavechange} activetab={savechange} />
         {savechange === 'home' && <Maincontent />}
         {savechange === 'skills' && <SkillsCarousel /> }
+        {savechange === 'contact' && <Contact />}
       </div>
   );
 }
