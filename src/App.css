@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+}
+
+@font-face {
+  font-family: 'slick';
+  src: url('/fonts/slick/slick.eot');
+  src: url('/fonts/slick/slick.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/slick/slick.woff') format('woff'),
+       url('/fonts/slick/slick.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.maincontent-area {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+}
